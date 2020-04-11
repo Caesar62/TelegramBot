@@ -58,6 +58,8 @@ def wxlei ():
     busca_costeras_cantabrico = soup_costeras_cantabrico.find_all('div',{'class':"contenedor_central"})
     texto_costera_cantabria = re.search(r'Aguas costeras de Cantabria(.*)Aguas costeras de B',(busca_costeras_cantabrico[1].text),re.DOTALL)
 
+
+
     meteo_sdr = """
 ALTA MAR  CANTABRICO {}
 AVISO PARA ALTA MAR:  {}
@@ -76,7 +78,6 @@ PREDICCION: {}
     texto_cantabria_fecha[0].replace("\xa0"," ").replace("\nFec"," ").upper(),
     texto_costera_cantabria[0].replace("\xa0"," ").replace("\n"," ").upper().replace("Aguas costeras de B",""),
     texto_fecha_fin_costeras[0].replace("\xa0"," ").replace("\nFec","").upper().replace("FECHA DE FIN","HASTA "),
-
 )
 
     return meteo_sdr
