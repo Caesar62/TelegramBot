@@ -35,6 +35,7 @@ def wxlei ():
     altaMarCantabrico = busca_cantabrico[1].text # texto
 
 
+
     # AGUAS COSTERAS CANTABRICO
     # http://www.aemet.es/es/eltiempo/prediccion/maritima?opc1=0&opc2=martot&opc3=1&area=can1
     rCostCantabrico = requests.get('http://www.aemet.es/es/eltiempo/prediccion/maritima?opc1=0&opc2=martot&opc3=1&area=can1')
