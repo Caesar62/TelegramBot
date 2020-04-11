@@ -26,7 +26,6 @@ def send_welcome(message):
 	saludo = "Hola {} bienvenido al bot"
 	bot.send_message(chatid, saludo.format(nombreUsuario))
 
-
 @bot.message_handler(commands = ["wxsdr"])
 def wx_sdr(message):
 	chatid = message.chat.id
