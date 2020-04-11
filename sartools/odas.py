@@ -83,11 +83,11 @@ def waves():
     # Cambia el nombre del fichero de Gijon
 
     def main1():
-            dire = '/Datos_Boyas/'
-            os.chdir(dire)
-            archivos = glob.glob('parpenas*.txt')
-            for dirlist in archivos:
-                    os.rename(dirlist, 'parpenas.txt')
+        dire = '/Datos_Boyas/'
+        os.chdir(dire)
+        archivos = glob.glob('parpenas*.txt')
+        for dirlist in archivos:
+            os.rename(dirlist, 'parpenas.txt')
     main1()
 
     shutil.move('/Datos_Boyas/parpenas.txt', '/Datos_Boyas1/parpenas.txt')
