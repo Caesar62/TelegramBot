@@ -67,6 +67,7 @@ def delete (message):
 	mensaje = "Los ficheros de 'C:/Datos_Boyas/' han sido borrados"
 	bot.send_message(chatid,mensaje)
 
+
 @bot.message_handler(commands=['help']) # Ayuda sobre comandos
 def help (message):
 	chatid = message.chat.id
