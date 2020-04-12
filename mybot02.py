@@ -14,6 +14,7 @@ bot = telebot.TeleBot("1245786001:AAEGA4bpp1AI56Hyydate-L9R6I2nM_BOE8")
 
 #########################   
 
+# prueba
 from sartools.wx import wxlei
 from sartools.odas import waves
 
