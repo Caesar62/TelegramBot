@@ -15,7 +15,7 @@ bot = telebot.TeleBot("1245786001:AAEGA4bpp1AI56Hyydate-L9R6I2nM_BOE8")
 #########################   
 
 # Librerias locales
-from sartools.wx import wxlei
+from sartools.wx2 import wxlei
 from sartools.odas import waves
 
 @bot.message_handler(commands=['start'])
