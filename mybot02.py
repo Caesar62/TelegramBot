@@ -45,15 +45,6 @@ def odas_sdr(message):
 	bot.send_message(chatid,texto_devolver1)
 	#print(texto_devolver1)
 
-'''
-@bot.message_handler(commands=["xxx"])
-def enviarSaludo(message):
-	chatid =message.chat.id
-	saludo = "hola este es un comando que responde"
-	bot.send_message(chatid,saludo)
-'''
-
-
 @bot.message_handler(commands = ["del"])
 def delete (message):
 	dir = "C:/Datos_Boyas/"
@@ -66,7 +57,6 @@ def delete (message):
 			os.remove(dir+item)
 	mensaje = "Los ficheros de 'C:/Datos_Boyas/' han sido borrados"
 	bot.send_message(chatid,mensaje)
-
 
 @bot.message_handler(commands=['help']) # Ayuda sobre comandos
 def help (message):
@@ -83,26 +73,6 @@ def help (message):
 	/del
 """)
 
-'''
-#####RESPUESTA GENERICA.AL FINAL DEL SCRIPT
-
-#############  COMANDO PARA CUANDO NO SE INTRODUCE UN COMANDO VÁLIDO
-
-@bot.message_handler(func=lambda message : True)
-def echo_all(message):
-	chatid = message.chat.id
-	bot.send_message(chatid,"""
-	#### No valid option ####
-	This bot accepts commands:
-	/start
-	/help
-	/wxsdr
-	/xxx
-	/odas
-	/del
-
-""")
-'''
 print("""
 The bot is working...
 CTRL-C to stop the bot
