@@ -23,7 +23,7 @@ def send_welcome(message):
 	#print(message)  # imprimo el message por consola para obtener el diccionario
 	chatid = message.chat.id
 	nombreUsuario = message.chat.first_name + " " + message.chat.last_name
-	print("Ha activado el bot: ",nombreUsuario)
+	print("Ha activado el bot (START): ",nombreUsuario)
 	saludo = "Hola {} bienvenido al bot"
 	bot.send_message(chatid, saludo.format(nombreUsuario))
 
