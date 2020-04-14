@@ -102,8 +102,6 @@ def echo_all(message):
 	/del
 
 """)
-
-
 '''
 print("""
 The bot is working...
